@@ -1,50 +1,107 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Ben Graveline</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="theme.css">
+    <title>Ben Graveline</title>
+    <style>
+
+      body {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-color: #004643;
+        display: flex;
+        justify-content: center;
+      }
+      .banner {
+        display: flex;
+        justify-content: center;
+      }
+      .banner-image {
+        width: 128px;
+        height: 128px;
+        object-fit: cover;
+        border-radius: 128px;
+      }
+      .thumbnail {
+        width: 48px;
+        height: 48px;
+        object-fit:cover;
+        border-radius: 48px;
+      }
+      .name {
+        color: #fffffe;
+        display: flex;
+        justify-content: center;
+      }
+
+      .social-icons {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .social-icons a {
+        color: #fffffe;
+        text-decoration: none;
+      }
+
+      .link {
+        background-color: #f9bc60;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+      }
+
+      .link a {
+        color: #001e1d;
+        text-decoration: none;
+        text-align: center;
+        flex-grow: 1;
+      }
+      .items {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 640px;
+        flex-grow: 1;
+      }
+    </style>
   </head>
   <body>
-    <div class="banner">
-      <img src="profile-pic.jpg" alt="Ben Graveline headshot">
-    </div>
-    
-    <div class="name">
-      Ben Graveline
-    </div>
-    
-    <div class="social-icons">
-      <a href="https://www.instagram.com/benjamingraveline/" target="_blank">
-        Instagram
-      </a>
-    </div>
+    <div class="items"> 
+      <div class="banner">
+        <img src="profile-pic.jpg" alt="Ben Graveline headshot" class="banner-image">
+      </div>
+      
+      <div class="name">
+        Ben Graveline
+      </div>
+      
+      <div class="social-icons">
+        <a href="https://www.instagram.com/benjamingraveline/" target="_blank">
+          Instagram
+        </a>
 
-    <div class="social-icons">
-      <a href="https://www.linkedin.com/in/bjg93/" target="_blank">
-        LinkedIn
-      </a>
-    </div>
+        <a href="https://www.linkedin.com/in/bjg93/" target="_blank">
+          LinkedIn
+        </a>
 
-    <div class="social-icons">
-      <a href="https://calendly.com/bgravelinebooth/booth-afg-phone" target="_blank">
-        Covfefe Chat
-      </a>
-    </div>
-    
-    <div class="link">
-      <img
-        src="homeServer.jpeg">
-    
-      <a target="_blank" href="https://github.com/awesome-selfhosted/awesome-selfhosted">Self-hosting Resources</a>
-    </div>
+        <a href="https://calendly.com/bgravelinebooth/booth-afg-phone" target="_blank">
+          Covfefe Chat
+        </a>
+      </div>
 
-    <div class="link">
-      <img
-        src="omelas.jpg">
-    
-      <a target="_blank" href="https://shsdavisapes.pbworks.com/f/Omelas.pdf">The City of Omelas</a>
+      
+      <div class="link">
+        <img src="homeServer.jpeg" alt="A server with many network cables." class="thumbnail">
+      
+        <a target="_blank" href="https://github.com/awesome-selfhosted/awesome-selfhosted">Self-hosting Resources</a>
+      </div>
+
+      <div class="link">
+        <img src="omelas.jpg" alt="A beach with seagulls." class="thumbnail">
+      
+        <a target="_blank" href="https://shsdavisapes.pbworks.com/f/Omelas.pdf">The City of Omelas</a>
+      </div>
     </div>
-    
   </body>
 </html>
